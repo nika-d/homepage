@@ -1,14 +1,15 @@
 <script lang="ts">
     import { v4 as uuidv4 } from 'uuid'
+import Hive from './Hive.svelte'
 
     export let colors,
         translations,
-        scaleSymbol = 0.06
+        scaleSymbol = 0.1
 
     function randomColor(){
         const random = Math.random() * 10
         if (random < .8)
-            return colors.red
+            return colors.accent
         if (random < 2.5)
             return colors.dark
         if (random < 8)
@@ -33,7 +34,7 @@
         >
             <desc>Sechseckgitter</desc>
             <symbol id={idSymbol} >
-                <slot/>
+                <Hive/>
             </symbol>
             {#each translations as t}
                 <use
