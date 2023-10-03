@@ -13,7 +13,7 @@ const a = 1,
 	sh = 1.732 * a,
 	xOffsetOddRows = sh / 2,
 	cv = 20,
-	ch = 74
+	ch = 20
 
 let y = 0
 for (let row = 0; row < cv; row++) {

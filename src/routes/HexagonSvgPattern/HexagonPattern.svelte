@@ -21,8 +21,9 @@ import Hive from './Hive.svelte'
     const idPattern = uuidv4().split('-')[0],
         idSymbol = uuidv4().split('-')[0]
 </script>
-
-<svg viewBox="0 0 20 20">
+<div class="container">
+    <div class="pattern-layout">
+<svg viewBox="0 0 20 20" width="100%">
     <defs>
         <pattern
                 id={idPattern}
@@ -46,5 +47,18 @@ import Hive from './Hive.svelte'
         </pattern>
     </defs>
 
-    <rect width="30" height="30" fill={'url(#' + idPattern + ')'} />
+    <rect width="26" height="26" transform="translate(-3,-3)" fill={'url(#' + idPattern + ')'} />
 </svg>
+    </div>
+</div>
+
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pattern-layout{
+        max-width: 100vw;
+    }
+</style>
