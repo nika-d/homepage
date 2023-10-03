@@ -1,2 +1,2 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome</h1>
+<p><a data-sveltekit-replacestate href="/HexagonSvgPattern">HexagonSvgPattern</a> - pattern of icons in hexagon layout with some colors</p>
